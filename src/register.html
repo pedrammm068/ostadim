@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -11,16 +11,58 @@
 <body>
     <div class="container w-full max-w-full flex flex-col justify-center items-center">
 
-        <div class="form  mt-12 bg-[#ffffff] w-full text-black flex justify-center items-center min-h-screen">
+        <div class="form   bg-[#ffffff] w-full text-black flex justify-center items-center min-h-screen">
 
-            <div class="log max-w-md  border border-gray-200 p-16  w-full pt-4 rounded shadow-2xl">
+            <div class="log max-w-lg border border-gray-200 p-16  w-full pt-4 rounded shadow-2xl">
                 
                 <div class=" text-center mb-4">
-                    <h1 class="text-2xl font-bold text-center p-2">ثبت‌نام دانشجو</h1>
+                    <h1 class="text-3xl font-bold text-center p-2">ثبت‌نام دانشجو</h1>
                     <span class="text-[12px]">قبلاً حساب کاربری دارید؟<a class="underline" href="">ورود</a> </span>
-
                 
                 </div>
+
+
+<div  class="flex flex-col items-start w-full">
+<form class="w-full" method="post" action="/register">
+    <div class="flex gap-[145px]">
+        <label class="text-[12px] block p-3" for="fname">نام:</label>
+        <label class="text-[12px] block p-3" for="lname">نام خانوادگی:</label>
+
+    </div>
+    <div class="flex justify-between gap-5 ">
+        <input required name="fname" id="fname" class=" p-3 w-full rounded bg-[#f8f8f8] mb-4" placeholder="علی" type="text">
+        <input required name="lname" id="lname" class=" p-3 w-full rounded bg-[#f8f8f8] mb-4" placeholder="احمدی" type="text">
+        
+    </div>
+
+       <div class="flex gap-[115px]">
+        <label class="text-[12px] block p-3" for="karbari">نام کاربری:</label>
+        <label class="text-[12px] block p-3" for="email">ایمیل:</label>
+
+    </div>
+    <div class="flex justify-between gap-5 ">
+        <input required name="karbari" id="karbari" class=" p-3 w-full rounded bg-[#f8f8f8] mb-4" placeholder="aliahmadi-29" type="text">
+        <input required name="email" id="email" class=" p-3 w-full rounded bg-[#f8f8f8] mb-4" placeholder="alia29@gmail.com" type="email">
+        
+    </div>
+
+       <div class="flex gap-[120px]">
+        <label class="text-[12px] block p-3" for="password">رمز عبور:</label>
+        <label class="text-[12px] block p-3" for="passwordto">تایید رمز عبور:</label>
+
+    </div>
+    <div class="flex justify-between gap-5 ">
+        <input required name="password" id="password" class=" p-3 w-full rounded bg-[#f8f8f8] mb-4" placeholder="aliah29" type="password">
+        <input required name="passwordto" id="passwordto" class=" p-3 w-full rounded bg-[#f8f8f8] mb-4" placeholder="aliah29" type="password">
+        
+    </div>
+
+    <span class="block mb-4">با ثبت‌نام، من با قوانین و مقررات سایت موافقم </span>
+    <div class="flex justify-center items-center w-full">
+  <input class=" p-2 rounded w-full bg-blue-600 text-white hover:bg-amber-300 cursor-pointer hover:text-black" value="عضویت" type="submit">
+</div>
+</form>
+</div>
 
             </div>
 
