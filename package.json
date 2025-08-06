@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "tailwindcss": "^4.1.11"
+  }
+}
